@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Layanan penyediaan dan distribusi air bersih berkualitas tinggi, higienis, dan terstandarisasi untuk kenyamanan masyarakat.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💧</text></svg>">
+    <title>Layanan Air Bersih Berkualitas</title>
     <style>
         /* --- Variabel & Reset --- */
         :root {
@@ -30,6 +31,7 @@
             color: var(--text-dark);
             background-color: #fff;
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
 
         a { text-decoration: none; color: inherit; transition: var(--transition); }
@@ -125,7 +127,6 @@
         /* --- Hero Section (Poster Style) --- */
         .hero {
             height: 100vh;
-            /* Gambar berkualitas tinggi bertema air bersih */
             background: url('https://www.radarjatim.co/wp-content/uploads/2023/09/64cc5beaa81a0-krisis-air-bersih-mulai-dialami-warga-di-sejumlah-desa-di-gresik_1265_711.jpg') no-repeat center center/cover;
             display: flex;
             justify-content: center;
@@ -280,6 +281,52 @@
             line-height: 1.5;
         }
 
+        /* --- Kualitas Air & Kontak Section --- */
+        .info-section {
+            padding: 90px 5%;
+            background: #fff;
+        }
+
+        .info-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        .info-text h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .info-text p {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .contact-box {
+            background: #f1f8fc;
+            padding: 40px;
+            border-radius: 16px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .contact-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .contact-box ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            color: #495057;
+            font-weight: 500;
+        }
+
         /* --- Footer --- */
         footer {
             background-color: var(--text-dark);
@@ -294,7 +341,7 @@
         /* --- Responsif Media Query --- */
         @media (max-width: 768px) {
             header { padding: 15px 20px; }
-            nav ul { display: none; } /* Tersembunyi di mobile untuk kesederhanaan poster */
+            nav ul { display: none; } 
             .hero h1 { font-size: 2.3rem; }
             .hero p { font-size: 1rem; }
             .hero-buttons { flex-direction: column; gap: 12px; }
@@ -305,19 +352,10 @@
 <body>
 
     <!-- Header / Navigasi -->
-    <header>
-        <div class="logo">
-            💧 <span>Air</span>Bersih
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#services">Layanan</a></li>
-                <li><a href="#quality">Kualitas Air</a></li>
-                <li><a href="#contact">Kontak</a></li>
+
             </ul>
         </nav>
-        <a href="#contact" class="btn-cta-header">Pengaduan & Info</a>
+       
     </header>
 
     <!-- Hero Section (Poster Utama) -->
@@ -326,11 +364,3 @@
             <span class="badge-tag">LAYANAN MASYARAKAT</span>
             <h1>AIR BERSIH BERKUALITAS UNTUK HIDUP LEBIH SEHAT</h1>
             <p>Komitmen kami menyediakan distribusi air bersih yang higienis, jernih, dan sesuai standar kesehatan untuk kenyamanan seluruh warga Kota Ambon.</p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary">Kembali ke Beranda</a>
-                <a href="#contact" class="btn btn-secondary">Tentang Kami</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bagian Layanan & Keunggulan -->
